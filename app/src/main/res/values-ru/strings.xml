@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ВАЖНО СРОЧНО</string>
+    <string name="hello_blank_fragment">Привет новый фрагмент</string>
+    <string name="home">ДОМОЙ</string>
+    <string name="settings">НАСТРОЙКИ</string>
+    <string name="new_task">НОВАЯ ЗАДАЧА</string>
+    <string name="task">ЗАДАЧИ</string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="login">ЛОГИН</string>
+    <string name="close">ЗАКРЫТЬ ЗАДАЧУ</string>
+    <string name="notinternet">ОШИБКА! ВКЛЮЧИТЕ ИНТЕРНЕТ!</string>
+    <string name="download">ЗАГРУЗКА</string>
+    <string name="logon">АВТОРИЗУЙТЕСЬ</string>
+    <string name="important">ВАЖНО</string>
+    <string name="alllist">ВЕСЬ СПИСОК</string>
+    <string name="urgent">СРОЧНО</string>
+    <string name="imp_and_urgent">ВАЖНО И СРОЧНО</string>
+    <string name="not_imp_and_urgen">НЕ ВАЖНО И НЕ СРОЧНО</string>
+    <string name="app_for_task">ПРИЛОЖЕНИЕ ДЛЯ УЧЕТА ВАШИХ ДЕЛ И ЗАДАЧ</string>
+</resources>
