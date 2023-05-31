@@ -27,21 +27,21 @@ class TaskAll : Fragment() {
     ): View? {
         binding = TaskAllBinding.inflate(inflater, container, false)
 
-      //  initRecyclerProducts()
+        initRecyclerProducts()
 
         loadProducts()
 
         return binding?.root
     }
 
-    private fun initRecyclerProducts(type: String){
+    private fun initRecyclerProducts(){
 
         binding?.recyclerTask?.layoutManager = LinearLayoutManager(context)
         taskAdapter = TaskAdapter({taskModel: TaskModel -> completeTask(taskModel)  },
             {taskModel: TaskModel -> editTask(taskModel)  })
 
         binding?.recyclerTask?.adapter = taskAdapter
-        filterTasks(type)
+
     }
 
     private fun completeTask(taskModel: TaskModel) {
@@ -53,27 +53,11 @@ class TaskAll : Fragment() {
     }
     private fun loadProducts(){
         taskViewModel.loadTask.observe(viewLifecycleOwner, Observer {
-           // taskAdapter?.setList(it)
-           // val trype = it
-           // val type = "important"
-            val types = resources.getStringArray(R.array.type)
-            for((index, name) in types.withIndex()){
-                initRecyclerProducts(name)
-
-            }
-           // initRecyclerProducts(type)
-           // taskAdapter?.notifyDataSetChanged()
+            taskAdapter?.setList(it)
+            taskAdapter?.notifyDataSetChanged()
         })
     }
 
-    private fun filterTasks(type: String) {
-        val filteredList = taskViewModel.loadTask.value?.filter { task ->
-            // Define your selection criteria here based on the 'type'
-            // For example, if you want to remove completed tasks:
-            task.type == type
-        }
-        taskAdapter?.setList(filteredList as List<TaskModel>)
-        taskAdapter?.notifyDataSetChanged()
-    }
+
 
 }

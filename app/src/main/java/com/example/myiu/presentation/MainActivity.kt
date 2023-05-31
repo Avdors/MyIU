@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.settingItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, SettingFragment()).commit()
                 R.id.loginBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, Login()).commit()
                 R.id.allList -> supportFragmentManager.beginTransaction().replace(R.id.content, TaskAll()).commit()
+                R.id.taskItemBottomNav -> supportFragmentManager.beginTransaction().replace(R.id.content, TaskForType()).commit()
             }
 
             return@setOnItemSelectedListener true

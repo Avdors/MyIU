@@ -6,7 +6,7 @@
     android:id="@+id/cardTask"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp">
+    android:layout_margin="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contentCardTask"
@@ -18,11 +18,11 @@
             android:id="@+id/nameTask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_margin="10dp"
-            android:textColor="@color/black"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <androidx.appcompat.widget.AppCompatImageButton
@@ -32,9 +32,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/completeTask"
-            android:layout_margin="10dp"
+            android:layout_margin="1dp"
             android:backgroundTint="@android:color/transparent"
-            android:src="@drawable/edit_white"/>
+            android:src="@drawable/edit_white_smal"/>
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/completeTask"
@@ -43,9 +43,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_margin="10dp"
+            android:layout_margin="1dp"
             android:backgroundTint="@android:color/transparent"
-            android:src="@drawable/done"/>
+            android:src="@drawable/done_smal"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

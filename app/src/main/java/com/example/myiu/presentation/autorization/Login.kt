@@ -61,7 +61,7 @@ class Login : Fragment() {
 
         val sharedPreferences = requireContext().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
         val savedValue = sharedPreferences.getString("email", "default value")
-        if(savedValue != null) {
+        if(savedValue != "default value") {
 
             setGooglePlusButtonText(binding.signInButton, savedValue.toString())
         }
