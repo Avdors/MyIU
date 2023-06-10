@@ -18,11 +18,12 @@ class TaskApiDataSourceIMPL (private val taskDataSource: TaskDataSource):
         var email: String? = "test"
         val sharedPreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
         val savedValue = sharedPreferences.getString("email", "default value")
-        if(savedValue != null) {
+        if(savedValue != "default value") {
 
            email = savedValue.toString()
         }
-        val call = ApiClient.instance?.api?.getTask()
+
+        val call = ApiClient.instance?.api?.getTask(email.toString())
         call?.enqueue(object : Callback<ArrayList<TaskApiModel>> {
             override fun onResponse(
                 call: Call<ArrayList<TaskApiModel>>,

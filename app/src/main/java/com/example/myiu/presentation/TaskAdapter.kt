@@ -27,9 +27,7 @@ class TaskAdapter (private val completeTask:(TaskModel)->Unit,
 
     fun setList(task: List<TaskModel>) {
         taskList.clear()
-
         taskList.addAll(task)
-
     }
 
 
@@ -38,8 +36,6 @@ class TaskAdapter (private val completeTask:(TaskModel)->Unit,
                  completeTask: (TaskModel) -> Unit,
                  editTask: (TaskModel) -> Unit
         ) {
-            //binding.idTask.text = task.id.toString()
-
             binding.nameTask.text = taskModel.name
             binding.completeTask.setOnClickListener({
                 completeTask(taskModel) })

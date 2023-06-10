@@ -6,10 +6,20 @@
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/done.xml" value="0.2215" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/edit_white.xml" value="0.235" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/frame_blue.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/frame_gold.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/frame_green.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/frame_red.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/logining.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/oval_blue.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/oval_gold.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/oval_green.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/oval_red.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/separator_gold.xml" value="0.235" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/drawable/settings.xml" value="0.235" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/activity_main.xml" value="0.3359375" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/fragment_setting.xml" value="0.31875" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/home.xml" value="0.3359375" />
-        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/login.xml" value="0.3359375" />
+        <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/login.xml" value="0.1" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/task_all.xml" value="0.3359375" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/task_for_type.xml" value="0.3359375" />
         <entry key="..\:/java/Kotlin/Git/MappBU/MyIU/app/src/main/res/layout/task_item.xml" value="0.3359375" />

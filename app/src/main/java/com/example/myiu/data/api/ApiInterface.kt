@@ -8,5 +8,5 @@ import retrofit2.http.Query
 
 interface ApiInterface {
     @GET("getTask.php")
-    fun getTask(): Call<ArrayList<TaskApiModel>>
+    fun getTask(@Query("email") email: String): Call<ArrayList<TaskApiModel>>
 }

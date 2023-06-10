@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:rowCount="2"
         android:columnCount="2"
-        android:useDefaultMargins="true">
+        android:useDefaultMargins="false">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/important"

@@ -77,23 +77,19 @@ class TaskForType : Fragment() {
     }
     private fun loadTask(){
         taskViewModel.loadTask.observe(viewLifecycleOwner, Observer {
-            // taskAdapter?.setList(it)
-            // val trype = it
-            // val type = "important"
+
             val types = resources.getStringArray(R.array.type)
             for((index, name) in types.withIndex()){
                 initRecyclerTask(name)
 
             }
-            // initRecyclerProducts(type)
-            // taskAdapter?.notifyDataSetChanged()
+
         })
     }
 
     private fun filterTasks(type: String) {
         val filteredList = taskViewModel.loadTask.value?.filter { task ->
-            // Define your selection criteria here based on the 'type'
-            // For example, if you want to remove completed tasks:
+
             task.type == type
         }
         taskAdapter?.setList(filteredList as List<TaskModel>)

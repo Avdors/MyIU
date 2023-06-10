@@ -1,52 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
     tools:context=".presentation.autorization.Login"
-    android:layout_marginTop="200dp">
+
+    android:layout_marginTop="1dp">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvHead"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:textColor="@color/gold"
-        android:text="@string/app_for_task" />
+        android:text="@string/app_for_task"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/sep_gold"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/separator_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHead" />
+
+    <View
+        android:id="@+id/oval_blue"
+        android:layout_width="20dp"
+        android:background="@drawable/oval_blue"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sep_gold"/>
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textColor="@color/red"
-        android:text="" />
+        android:textColor="@color/light_blue"
+        android:text="@string/important"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/sep_gold"
+        app:layout_constraintLeft_toRightOf="@+id/oval_blue"/>
+
+    <View
+        android:id="@+id/oval_red"
+        android:layout_width="20dp"
+        android:background="@drawable/oval_red"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oval_blue"/>
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvIU"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
+        android:text="@string/imp_and_urgent"
         android:textColor="@color/red"
-        android:text="@string/imp_and_urgent" />
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/oval_red"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+
+    <View
+        android:id="@+id/oval_green"
+        android:layout_width="20dp"
+        android:background="@drawable/oval_green"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oval_red"/>
+
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tv2"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_not_IU"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textColor="@color/red"
-        android:text="" />
+        android:text="@string/not_imp_and_urgen"
+        android:textColor="@color/green_dark"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/oval_green"
+        app:layout_constraintTop_toBottomOf="@+id/tvIU" />
+
+    <View
+        android:id="@+id/oval_gold"
+        android:layout_width="20dp"
+        android:background="@drawable/oval_gold"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oval_green"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/urgent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_imp_and_urgen"
+        android:textColor="@color/gold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/oval_green"
+        app:layout_constraintTop_toBottomOf="@+id/tv_not_IU" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/signInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urgent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

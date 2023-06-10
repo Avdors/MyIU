@@ -20,17 +20,13 @@ class TaskAll : Fragment() {
     private var taskAdapter: TaskAdapter? = null
     val taskViewModel: TaskViewModel by viewModel()
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = TaskAllBinding.inflate(inflater, container, false)
-
         initRecyclerProducts()
-
         loadProducts()
-
         return binding?.root
     }
 
@@ -39,17 +35,14 @@ class TaskAll : Fragment() {
         binding?.recyclerTask?.layoutManager = LinearLayoutManager(context)
         taskAdapter = TaskAdapter({taskModel: TaskModel -> completeTask(taskModel)  },
             {taskModel: TaskModel -> editTask(taskModel)  })
-
         binding?.recyclerTask?.adapter = taskAdapter
 
     }
 
     private fun completeTask(taskModel: TaskModel) {
-
     }
 
     private fun editTask(taskModel: TaskModel) {
-
     }
     private fun loadProducts(){
         taskViewModel.loadTask.observe(viewLifecycleOwner, Observer {
