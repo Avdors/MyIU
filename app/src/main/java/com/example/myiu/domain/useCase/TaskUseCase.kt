@@ -19,5 +19,9 @@ class TaskUseCase (private val taskCall: TaskCall){
         taskCall.startMigration(context)
     }
 
+    suspend fun updateTask(taskModel: TaskModel){
+       taskCall.updateTask(taskModel)
+    }
+
 
 }

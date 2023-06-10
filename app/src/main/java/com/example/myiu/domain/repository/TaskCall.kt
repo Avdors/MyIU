@@ -9,6 +9,6 @@ interface TaskCall {
     fun getAllTask(): LiveData<List<TaskModel>>
     fun getFilter(type:String, completed:String): LiveData<List<TaskModel>>
     suspend fun startMigration(context: Context)
-
+    suspend fun updateTask(taskModel: TaskModel)
 
 }

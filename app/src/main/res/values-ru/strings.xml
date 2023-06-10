@@ -17,4 +17,11 @@
     <string name="imp_and_urgent">ВАЖНО И СРОЧНО</string>
     <string name="not_imp_and_urgen">НЕ ВАЖНО И НЕ СРОЧНО</string>
     <string name="app_for_task">ПРИЛОЖЕНИЕ ДЛЯ УЧЕТА ВАШИХ ДЕЛ И ЗАДАЧ</string>
+    <string name="task_edit">РЕДАКТИРОВАНИЕ ЗАДАЧИ</string>
+    <string name="label_enter_name_task">ВВЕДИТЕ НАЗВАНИЕ ЗАДАЧИ</string>
+    <string name="label_enter_info_task">ВВЕДИТЕ ОПИСАНИЕ ЗАДАЧИ</string>
+    <string name="enter_date_start">ДАТА СТАРТА</string>
+    <string name="enter_end_start">ДАТА ОКОНЧАНИЯ</string>
+    <string name="completed">ЗАВЕРШЕНА</string>
+    <string name="finish_editing">ЗАВЕРШИТЬ РЕДАКТИРОВАНИЕ</string>
 </resources>

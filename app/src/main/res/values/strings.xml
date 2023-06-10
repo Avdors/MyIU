@@ -17,4 +17,11 @@
     <string name="imp_and_urgent">IMPORTANT AND URGENT</string>
     <string name="app_for_task">AN APP TO KEEP TRACK OF YOUR CASES AND TASKS</string>
     <string name="not_imp_and_urgen">NOT IMPORTANT AND URGENT</string>
+    <string name="task_edit">EDIT TASK</string>
+    <string name="label_enter_name_task">ENTER A TASK NAME</string>
+    <string name="label_enter_info_task">ENTER A TASK DESCRIPTION</string>
+    <string name="enter_date_start">START DATE</string>
+    <string name="enter_end_start">END DATE</string>
+    <string name="completed">COMPLETED</string>
+    <string name="finish_editing">FINISH EDITING</string>
 </resources>

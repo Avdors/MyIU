@@ -24,5 +24,9 @@ class TaskRepository (private val taskApiDataSource: TaskApiDataSource,
         taskApiDataSource.startMigration(context)
     }
 
+    override suspend fun updateTask(taskModel: TaskModel) {
+        taskDataSource.updateTask(taskModel)
+    }
+
 
 }

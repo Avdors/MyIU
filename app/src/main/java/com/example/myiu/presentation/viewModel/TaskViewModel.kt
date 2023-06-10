@@ -21,4 +21,11 @@ class TaskViewModel(private val taskUseCase: TaskUseCase): ViewModel() {
         taskUseCase.startMigration(context)
 
     }
+    fun startUpdateTask(idTask:Int, nameTask: String,email:String, typeTask: String, infoTask:String,
+    dateStart:String, dateEnd:String, completed: String){
+       updateTask(TaskModel(idTask, nameTask, infoTask, email,typeTask,dateStart,dateEnd,completed))
+    }
+    fun updateTask(taskModel: TaskModel) = viewModelScope.launch{
+        taskUseCase.updateTask(taskModel)
+    }
 }

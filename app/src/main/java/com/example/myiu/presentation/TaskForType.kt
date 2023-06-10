@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myiu.R
@@ -73,7 +74,19 @@ class TaskForType : Fragment() {
     }
 
     private fun editTask(taskModel: TaskModel) {
+        val panelEditTask = PanelEditTask()
+        val parameters = Bundle()
+        parameters.putString("idTask", taskModel.id.toString())
+        parameters.putString("nameTask", taskModel.name.toString())
+        parameters.putString("email", taskModel.email.toString())
+        parameters.putString("typeTask", taskModel.type.toString())
+        parameters.putString("infoTask", taskModel.info.toString())
+        parameters.putString("dateStart", taskModel.dateStart.toString())
+        parameters.putString("dateEnd", taskModel.dateEnd.toString())
+        parameters.putString("completed", taskModel.completed.toString())
+        panelEditTask.arguments = parameters
 
+        panelEditTask.show((context as FragmentActivity).supportFragmentManager, "editTask")
     }
     private fun loadTask(){
         taskViewModel.loadTask.observe(viewLifecycleOwner, Observer {
