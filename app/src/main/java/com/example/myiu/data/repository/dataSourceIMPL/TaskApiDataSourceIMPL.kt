@@ -68,21 +68,5 @@ class TaskApiDataSourceIMPL (private val taskDataSource: TaskDataSource):
 
             }
         })
-
-
-    }
-
-    override fun updateBD(
-        id: Int,
-        name: String,
-        info: String,
-        email: String,
-        type: String,
-        dateStart: String,
-        dateEnd: String,
-        completed: String
-    ) {
-        val call = ApiClient.instance?.api?.updateTask(id.toString().toInt(), name.toString(),
-        info.toString(), email.toString(), type.toString(), dateStart.toString(), dateEnd.toString(), completed.toString())
     }
 }
