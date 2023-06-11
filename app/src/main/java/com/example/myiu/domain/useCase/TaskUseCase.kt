@@ -22,6 +22,9 @@ class TaskUseCase (private val taskCall: TaskCall){
     suspend fun updateTask(taskModel: TaskModel){
        taskCall.updateTask(taskModel)
     }
+    suspend fun updateDb(context: Context){
+        taskCall.updateDb(context)
+    }
 
 
 }

@@ -28,5 +28,11 @@ class TaskRepository (private val taskApiDataSource: TaskApiDataSource,
         taskDataSource.updateTask(taskModel)
     }
 
+    override suspend fun updateDb(context: Context) {
+        taskApiDataSource.updateDb(context)
+    }
+
+
+
 
 }

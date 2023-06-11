@@ -61,7 +61,8 @@ class PanelEditTask : BottomSheetDialogFragment(), View.OnKeyListener, View.OnCl
             taskViewModel?.startUpdateTask(idTask.toString().toInt(), binding?.editNameTask?.text?.toString()!!,
             email!!, typeTask.toString(),binding?.editInfoTask?.text?.toString()!!,binding?.DateStartTask?.toString()!!,
             binding?.DateEndTask.toString()!!, checked)
-
+            //AVD
+            taskViewModel?.startUpdateDb(context as FragmentActivity)
                 dismiss()
 
                 (context as FragmentActivity).supportFragmentManager.beginTransaction().replace(R.id.content, TaskForType()).commit()

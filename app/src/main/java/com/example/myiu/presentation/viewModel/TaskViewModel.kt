@@ -28,4 +28,8 @@ class TaskViewModel(private val taskUseCase: TaskUseCase): ViewModel() {
     fun updateTask(taskModel: TaskModel) = viewModelScope.launch{
         taskUseCase.updateTask(taskModel)
     }
+    fun startUpdateDb(context: Context) = viewModelScope.launch {
+        taskUseCase.updateDb(context)
+
+    }
 }
